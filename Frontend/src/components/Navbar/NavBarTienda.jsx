@@ -13,10 +13,13 @@ import "./NavBarTienda.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons"
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
+import Cookies from "universal-cookie/es6";
 //import { NavLink } from "react-router-dom";
 
+const cookies = new Cookies();
 
 const NavBarTienda = () => {
+
   const categorias = [
     {
       categoria: "FRUTAS",
@@ -28,13 +31,18 @@ const NavBarTienda = () => {
       categoria: "CARNES",
     },
   ];
-  const guardarLocalstorage = (categoria) => {
+  const logout= ()=>{
+    cookies.remove("_s");
+    window.location.reload();  
+  }
+  
+    const guardarLocalstorage = (categoria) => {
     localStorage.setItem("tipo", categoria);
   };
   return (
     <Navbar bg="success" expand="lg" variant="dark" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             src="https://res.cloudinary.com/dgjrfgl2e/image/upload/v1632289106/Tu%20Tienda%20Cercana/logo-TTC-01_saviwg.svg"
             width="200"
@@ -66,12 +74,13 @@ const NavBarTienda = () => {
               <Row>Usuario</Row>
               <Dropdown.Divider />
             </Dropdown.Header>
-            <Dropdown.Item id="dropdown-item" href="#">Cerrar Sesion</Dropdown.Item>
+            <Dropdown.Item onClick={()=>logout()} id="dropdown-item" >Cerrar Sesion</Dropdown.Item>
           </DropdownButton>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 };
+
 
 export default NavBarTienda;

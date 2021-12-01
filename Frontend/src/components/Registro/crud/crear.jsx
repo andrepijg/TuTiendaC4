@@ -164,21 +164,21 @@ export default class ProductosCrear extends React.Component {
                             controlId="formBasic"
                             aria-label="Default select example"
                                 onChange={(e) => this.setValue('url_img', e.target.value)}>
-                                <option value="N/A">Seleccione una opción</option>
-                                <option value="https://bit.ly/Ajo_">https://bit.ly/Ajo_</option>
-                                <option value="https://bit.ly/Banano_">https://bit.ly/Banano_</option>
-                                <option value="https://bit.ly/Coco_coco">https://bit.ly/Coco_coco</option>
-                                <option value="https://bit.ly/Kiwi_Kiwi">https://bit.ly/Kiwi_Kiwi</option>
-                                <option value="https://bit.ly/Lomo_res">https://bit.ly/Lomo_res</option>
-                                <option value="https://bit.ly/Mango_oneco">https://bit.ly/Mango_oneco</option>
-                                <option value="https://bit.ly/Manzana_Roja7">https://bit.ly/Manzana_Roja</option>
-                                <option value="https://bit.ly/Naranja_Naranja">https://bit.ly/Naranja_Naranja</option>
-                                <option value="https://bit.ly/Pechuga_">https://bit.ly/Pechuga_</option>
-                                <option value="https://bit.ly/Pepino_">https://bit.ly/Pepino_</option>
-                                <option value="https://bit.ly/Piña_">https://bit.ly/Piña_</option>
-                                <option value="https://bit.ly/Sobrebarriga_">https://bit.ly/Sobrebarriga_</option>
-                                <option value="https://bit.ly/Tomate_Tomate">https://bit.ly/Tomate_Tomate</option>
-                                <option value="https://bit.ly/Zanahoria_">https://bit.ly/Zanahoria_</option>
+                                <option value="Seleccione una opción">Seleccione una opción</option>
+                                <option value="https://bit.ly/Ajo_">Ajo</option>
+                                <option value="https://bit.ly/Banano_">Banano</option>
+                                <option value="https://bit.ly/Coco_coco">Coco</option>
+                                <option value="https://bit.ly/Kiwi_Kiwi">Kiwi</option>
+                                <option value="https://bit.ly/Lomo_res">Lomo</option>
+                                <option value="https://bit.ly/Mango_oneco">Mango</option>
+                                <option value="https://bit.ly/Manzana_Roja">Manzana Roja</option>
+                                <option value="https://bit.ly/Naranja_Naranja">Naranja</option>
+                                <option value="https://bit.ly/Pechuga_">Pechuga</option>
+                                <option value="https://bit.ly/Pepino_">Pepino</option>
+                                <option value="https://bit.ly/Piña_">Piña</option>
+                                <option value="https://bit.ly/Sobrebarriga_">Sobrebarriga</option>
+                                <option value="https://bit.ly/Tomate_Tomate">Tomate</option>
+                                <option value="https://bit.ly/Zanahoria_">Zanahoria</option>
                             </Form.Select>
 
                         <Button

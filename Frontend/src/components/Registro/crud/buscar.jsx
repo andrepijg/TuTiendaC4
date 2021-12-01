@@ -126,7 +126,9 @@ export default class ProductosBuscar extends React.Component {
                         show: true,
                     },
                 });
-                if (response.data.exito) this.reloadPage();
+                if (response.data.exito){ 
+                this.reloadPage();
+            }
             })
             .catch((err) => {
                 console.error(err);
@@ -137,7 +139,7 @@ export default class ProductosBuscar extends React.Component {
     reloadPage() {
         setTimeout(() => {
             window.location.reload();
-        }, 2500);
+        }, 2000);
     }
 
     render() {

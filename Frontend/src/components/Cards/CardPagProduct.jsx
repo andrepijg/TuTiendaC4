@@ -4,7 +4,7 @@ import {obtenerProductos} from '../../services/index.js';
 // import fruta from "../../assets/mango.png";
 import "./CardPagProduct.css";
 
-const CardPagProduct = (props) => {
+const CardPagProduct = () => {
   let tipoAlimento = "";
   if (localStorage.getItem("tipo")) {
     tipoAlimento = localStorage.getItem("tipo");
@@ -35,7 +35,7 @@ const filtrarAlimentos = product.filter((alimento) => {
     <Container>
       <h1 className="text-center bg-alert my-5">PRODUCTOS</h1>
       <div className="search">
-        {/* <input type="text" value={search} onChange={handleSearch} /> */}
+        {/* <input type="text" value={search} onChange={handleSearch} />  */}
       </div>
       <div className="container-products fluid">
         {filtrarAlimentos.map((product) => (
