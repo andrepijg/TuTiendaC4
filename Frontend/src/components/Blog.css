@@ -1,0 +1,17 @@
+#blog-container {
+    padding: 100px;
+    
+}
+
+#titulo-principal{
+    text-align: center;
+    background-color: #FFAB49;
+    background-position: center;
+    background-origin: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px ;
+    width: 700px;
+    align-content: center;
+    
+}

@@ -1,0 +1,14 @@
+.container-tiendas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+  
+}
+
+.container-cards {
+  width: 300px;
+  margin-top: 20px;
+  
+
+}

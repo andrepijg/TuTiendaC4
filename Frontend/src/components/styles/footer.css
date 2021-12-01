@@ -1,0 +1,17 @@
+.container-row {
+  margin: 0;
+}
+.container-footer {
+  margin: 100px 0 0 0;
+  position: relative;
+}
+.container-row {
+  background: #565657;
+}
+.img-footer {
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../svg/footer.svg");
+}

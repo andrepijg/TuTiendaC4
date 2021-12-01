@@ -1,0 +1,10 @@
+.container-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 100px;
+}
+.container-cards {
+  width: 300px;
+  margin-top: 20px;
+}

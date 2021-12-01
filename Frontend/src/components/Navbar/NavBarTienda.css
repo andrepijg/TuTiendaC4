@@ -1,0 +1,29 @@
+
+#dropdown-menu-align-end{
+    margin-left: 30px;
+    background-color: whitesmoke;
+    color: green;
+    font-weight: bold;
+    }
+
+#dropdown-header .row:nth-child(1){
+    font-size:80px;
+    display: flex;
+    justify-content: center;
+    
+}
+#dropdown-header .row:nth-child(2){
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-family: 'Krub';
+}
+
+.logo{
+    width: 100px;
+}
+
+#dropdown-item{
+    text-align: center;
+}
